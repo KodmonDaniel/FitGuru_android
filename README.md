@@ -13,3 +13,6 @@ név szerinti üdvözlő üzenettel fogad minket és kiírja a kijelző alján, 
 alkalmazást legutóbb.
 
 
+<img src="images/1.png" width="300"> <img src="images/2.png" width="300"> 
+> A bal oldalon az első indítás, a jobb oldalon az általános látható
+
