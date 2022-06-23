@@ -1,0 +1,2 @@
+# FitGuru_android
+Az alkalmazás egy edzésterv szervező és egészséges táplálkozást segítő alkalmazás. A felhasználónak lehetősége van saját edzéstervet készítenie különböző gyakorlattípusokból. Az alkalmazást használva könnyen nyomon követheti a gyakorlatokat edzés közben. A felhasználó számontarthatja a teljesítéseit, így az edzés dinamikusabbá, eredményesebbé válhat, továbbá lekérdezheti az aktuálisan fogyasztott ételek tulajdonságait.
