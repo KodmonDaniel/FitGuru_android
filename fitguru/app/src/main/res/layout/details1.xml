@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8AF2FF">
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextSugar"
+        app:layout_constraintTop_toTopOf="@+id/tvTextSugar" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:scaleX="-1"
+        android:scaleY="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextCal"
+        app:layout_constraintTop_toTopOf="@+id/tvTextCal" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextCarb"
+        app:layout_constraintTop_toTopOf="@+id/tvTextCarb" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:scaleX="-1"
+        android:scaleY="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextFat"
+        app:layout_constraintTop_toTopOf="@+id/tvTextFat" />
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="@string/intakes"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/sugar_progress"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/tvSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sugar_progress"
+        app:layout_constraintEnd_toEndOf="@+id/sugar_progress"
+        app:layout_constraintStart_toStartOf="@+id/sugar_progress"
+        app:layout_constraintTop_toTopOf="@+id/sugar_progress"
+        tools:text="60%" />
+
+    <TextView
+        android:id="@+id/tvTextSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSugar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/sugar_progress"
+        app:layout_constraintTop_toTopOf="@+id/tvSugar" />
+
+
+    <ProgressBar
+        android:id="@+id/cal_progress"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_progress"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tvCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cal_progress"
+        app:layout_constraintEnd_toEndOf="@+id/cal_progress"
+        app:layout_constraintStart_toStartOf="@+id/cal_progress"
+        app:layout_constraintTop_toTopOf="@+id/cal_progress"
+        tools:text="50%" />
+
+    <TextView
+        android:id="@+id/tvTextCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCal"
+        app:layout_constraintEnd_toStartOf="@+id/cal_progress"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/tvCal" />
+
+
+    <ProgressBar
+        android:id="@+id/carb_progress"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cal_progress"
+        tools:progress="20" />
+
+    <TextView
+        android:id="@+id/tvCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/carb_progress"
+        app:layout_constraintEnd_toEndOf="@+id/carb_progress"
+        app:layout_constraintStart_toStartOf="@+id/carb_progress"
+        app:layout_constraintTop_toTopOf="@+id/carb_progress"
+        app:layout_constraintVertical_bias="0.508"
+        tools:text="20%" />
+
+
+    <TextView
+        android:id="@+id/tvTextCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carbohydrates"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCarb"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/tvCarb"
+        android:layout_marginEnd="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/fat_progress"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carb_progress"
+        tools:progress="90" />
+
+    <TextView
+        android:id="@+id/tvFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fat_progress"
+        app:layout_constraintEnd_toEndOf="@+id/fat_progress"
+        app:layout_constraintStart_toStartOf="@+id/fat_progress"
+        app:layout_constraintTop_toTopOf="@+id/fat_progress"
+        tools:text="90%" />
+
+    <TextView
+        android:id="@+id/tvTextFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFat"
+        app:layout_constraintEnd_toStartOf="@+id/fat_progress"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/tvFat" />
+
+    <ImageButton
+        android:id="@+id/btClear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="#00000000"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/clear"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/fat"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextFat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTextFat" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/carb"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextCarb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTextCarb"
+        android:layout_marginEnd="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextCal"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/tvTextCal" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/sug"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTextSugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTextSugar"
+        android:layout_marginEnd="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
